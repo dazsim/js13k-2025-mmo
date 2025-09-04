@@ -8,3 +8,5 @@ Game Logic:
 
     Server Side : 
         game logic
+        optional network logic
+        

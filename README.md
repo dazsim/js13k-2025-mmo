@@ -6,13 +6,13 @@ A multiplayer online game built for the JS13K game jam with a focus on MMO funct
 
 ### 1. New Game Creation (Host Path)
 - **Step 1: World Setup**
-  - Configure world name, seed, max players
+  - Configure max players (seed / name optional)
   - Choose whether to make it public
   - Generate procedural world
 
 - **Step 2: Character Creation**
-  - Choose character name and class (Warrior, Mage, Archer)
-  - Customize appearance
+  - Choose character name. All players are space cats
+  - Customize appearance(optional TODO)
   - Confirm character
 
 - **Step 3: Hosting**
@@ -82,7 +82,6 @@ A multiplayer online game built for the JS13K game jam with a focus on MMO funct
 ### Network Setup
 - Default WebSocket server: `ws://localhost:8080`
 - Update `NetworkManager` constructor for different server
-- Mock data provided for offline testing
 
 ### Adding Features
 - Extend `GameState` classes for new functionality
