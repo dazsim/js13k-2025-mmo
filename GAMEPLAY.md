@@ -49,4 +49,28 @@ is fixed(is this a feature of the land rather than a loose item on the floor)
 
 Artwork will be encoded as binary and decompressed when the game loads. Once decoded, art can be redrawn in a variety of colours. For uniqueness a world should have a seed built up of colours used to recolour things. e.g. one world might have a green landscape while another might have red. raw metal resources should remain fixed colours but the stone might vary in colour. art will be simple and will loosely resemble the same level of quality you might see in original head over heels for the amstrad so only a few colours to keep space down. being able to recolour elements means e.g. for an ingot I can have 1 ingot image stored and then recolour for each resource. Makes extending the game easy as well.
 
+All background elements should be indexed from a pregenerated map. Once each chunk is generated, it can be modified by player actions.
+
+All foreground elements should be entities with flags. 
+    Can this be picked up
+    Is this solid
+    Is this attached to the ground or loose
+    Does it have unique metadata
+
+All players for the purposes of the game engine should be considered entities. Player movement from local controls and networked controls should update the entities location. Controls can be passed on to another entity if the player is inside another entity. e.g. Player inside Truck in driver seat.
+
+Game long term goal is to automate gathering resources and using those resources to expand.
+
+mmo paths
+
+/space-cats/                    Game root
+/space-cats/lobby               Game Lobby to find new games
+/space-cats/game-id             Individual game
+/space-cats/game-id/world-id    Individual world for game to take part in. Long term goal, visit multiple worlds
+/space-cats/hub                 <redacted>
+/space-cats/pirate-cats         <redacted>
+/space-cats/space-navy          <redacted>
+
+
+
 
