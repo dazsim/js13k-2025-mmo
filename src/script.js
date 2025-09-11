@@ -1537,7 +1537,9 @@ class Game {
         this.controllerConnected = false;
         
         // Network and MMO support
-        this.networkManager = new NetworkManager('wss://relay.js13kgames.com');
+        // this.networkManager = new NetworkManager('wss://relay.js13kgames.com');
+         this.networkManager = new NetworkManager('wss://space-cats-server.darrensim42.workers.dev');
+        //this.networkManager = new NetworkManager('wss://127.0.0.1:8787');
         this.networkManager.game = this; // Set reference back to game
         this.worldData = null;
         this.characterData = null;
